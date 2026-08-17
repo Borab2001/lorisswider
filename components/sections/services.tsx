@@ -5,18 +5,21 @@ const prestations = [
     {
         numeral: 'I',
         icon: '/illustrations/path1.svg',
+        alt: 'Illustration de piano d\'ambiance',
         title: "Piano d'ambiance haut de gamme",
         description: "Atmosphère élégante, chaleureuse et immersive avec une présence musicale discrète et soignée.",
     },
     {
         numeral: 'II',
         icon: '/illustrations/path2.svg',
+        alt: 'Illustration de pianos sous spotlights',
         title: "Performances événementielles",
         description: "Prestations marquantes pour les temps forts : accueil, ouverture, transition, final. Créations sur mesure et medleys originaux.",
     },
     {
         numeral: 'III',
         icon: '/illustrations/path3.svg',
+        alt: 'Illustration de piano fleuri',
         title: "Mariages & Événements privés",
         description: "Répertoire sur mesure, du plus intimiste au plus festif. Chaque prestation pensée pour s'intégrer à l'émotion du moment.",
     },
@@ -38,7 +41,7 @@ export default function Services() {
                             </span>
 
                             <div className="relative w-full h-auto aspect-4/3 flex items-center object-center">
-                                <Image src={item.icon} alt="" fill />
+                                <Image src={item.icon} alt={item.alt} fill loading="lazy" />
                             </div>
 
                             <div className="p-6 flex flex-col gap-3">
