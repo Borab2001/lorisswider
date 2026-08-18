@@ -12,7 +12,7 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-linear-to-t from-background via-background/10 to-transparent" />
 
-            <div className="absolute bottom-16 left-8 md:left-16 z-10">
+            <div className="absolute bottom-16 left-4 sm:left-8 md:left-16 z-10">
                 <h1 className="font-serif uppercase italic text-5xl md:text-7xl text-foreground">
                     Loris Swider
                 </h1>

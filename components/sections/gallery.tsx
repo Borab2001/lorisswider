@@ -14,7 +14,7 @@ const gridItems = [
 
 export default function Gallery() {
     return (
-        <section className="px-8 md:px-16 py-24 md:py-32">
+        <section className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                     {mosaic.map((item) => (

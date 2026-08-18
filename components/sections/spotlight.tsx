@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Spotlight() {
     return (
-        <section className="px-8 md:px-16 py-24 md:py-32">
+        <section className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
                 <div className="relative w-full aspect-video mb-8">
                     <Image
