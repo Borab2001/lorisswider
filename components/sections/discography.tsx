@@ -89,12 +89,6 @@ export default function Discography() {
                         )
                     )}
                 </div>
-
-                <p className="max-w-2xl mx-auto text-center text-foreground/80 leading-relaxed">
-                    À travers ses performances et la création de contenus visuels
-                    soignés, Loris Swider développe une image artistique cohérente et
-                    élégante, renforcée par une forte présence sur les réseaux sociaux.
-                </p>
             </div>
         </section>
     )
