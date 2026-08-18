@@ -9,12 +9,14 @@ import LockIcon from '@/components/icons/lock-icon'
 type DiscographyItem =
     |   {
             image: string
+            alt: string
             links: { spotify: string; deezer: string; youtube: string }
         }
     | null
 
 const discography: DiscographyItem[] = [{
         image: '/images/about.webp',
+        alt: '/',
         links: {
             spotify: 'https://open.spotify.com/track/xxxxx',
             deezer: 'https://www.deezer.com/track/xxxxx',
@@ -42,7 +44,12 @@ export default function Discography() {
                             tabIndex={0}
                             className="group relative aspect-square overflow-hidden outline-none"
                         >
-                            <Image src={item.image} alt="" fill className="object-cover" />
+                            <Image 
+                                src={item.image} 
+                                alt={item.alt}
+                                fill 
+                                className="object-cover" 
+                            />
 
                             <div
                             className="absolute inset-0 flex items-center justify-center gap-5 bg-card/30 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300
