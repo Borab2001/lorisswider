@@ -3,6 +3,7 @@ import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Services from "@/components/sections/services";
 import Discography from "@/components/sections/discography";
+import Spotlight from "@/components/sections/spotlight";
 import Gallery from "@/components/sections/gallery";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 			<About />
 			<Services />
 			<Discography />
+			<Spotlight />
 			<Gallery />
 		</>
     )
