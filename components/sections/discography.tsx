@@ -58,17 +58,17 @@ export default function Discography() {
                                 group-hover:opacity-100 group-hover:pointer-events-auto
                                 group-focus-within:opacity-100 group-focus-within:pointer-events-auto"
                             >
-                                <Link href={item.links.spotify} target="_blank" rel="noopener noreferrer">
+                                <Link href={item.links.spotify} target="_blank" rel="noopener noreferrer" aria-label="Écouter sur Spotify">
                                     <div className="w-10 h-auto">
                                         <Spotify/>
                                     </div>
                                 </Link>
-                                <Link href={item.links.deezer} target="_blank" rel="noopener noreferrer">
+                                <Link href={item.links.deezer} target="_blank" rel="noopener noreferrer" aria-label="Écouter sur Deezer">
                                     <div className="w-10 h-auto">
                                         <Deezer />
                                     </div>
                                 </Link>
-                                <Link href={item.links.youtube} target="_blank" rel="noopener noreferrer">
+                                <Link href={item.links.youtube} target="_blank" rel="noopener noreferrer" aria-label="Voir sur YouTube">
                                     <div className="w-10 h-auto">
                                         <Youtube />
                                     </div>
