@@ -2,12 +2,12 @@ import Image from "next/image"
 import Link from "next/link"
 
 const socials = [
-  { label: 'YouTube', href: 'https://youtube.com/...' },
-  { label: 'Instagram', href: 'https://instagram.com/...' },
-  { label: 'Spotify', href: 'https://open.spotify.com/...' },
-  { label: 'TikTok', href: 'https://tiktok.com/...' },
-  { label: 'Deezer', href: 'https://deezer.com/...' },
-  { label: 'Facebook', href: 'https://facebook.com/...' },
+    { label: 'YouTube', href: 'https://www.youtube.com/@lorisotto_officiel' },
+    { label: 'Instagram', href: 'https://www.instagram.com/lorisotto_officiel/' },
+    { label: 'Spotify', href: 'https://open.spotify.com/intl-fr/artist/64PwZ51lWZ9JT0lNDgQ4qj' },
+    { label: 'TikTok', href: 'https://www.tiktok.com/@lorisotto_officiel' },
+    { label: 'Deezer', href: 'https://www.deezer.com/fr/artist/282043541' },
+    { label: 'Facebook', href: '/' },
 ]
 
 export default function Footer() {
