@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, DM_Sans } from 'next/font/google';
 import "./globals.css";
+import SmoothScrollProvider from '@/components/providers/smooth-scroll-provider';
+
 
 const instrumentSerif = Instrument_Serif({
 	subsets: ['latin'],
@@ -25,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			className={`${instrumentSerif.variable} ${dmSans.variable} h-full antialiased`}
 		>
 			<body className="min-h-full flex flex-col">
-				{children}
+				<SmoothScrollProvider>{children}</SmoothScrollProvider>
 			</body>
 		</html>
 	);
