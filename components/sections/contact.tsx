@@ -49,6 +49,7 @@ export default function Contact() {
                         name="subject"
                         required
                         defaultValue=""
+                        aria-label="Objet"
                         className="bg-transparent border-b border-border py-4 text-foreground focus:outline-none focus:border-accent"
                     >
                         <option value="" disabled className="bg-background">
