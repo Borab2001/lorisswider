@@ -33,9 +33,16 @@ export default function Services() {
                     Prestations
                 </h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {prestations.map((item) => (
-                        <div key={item.numeral} className="card-border relative">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {prestations.map((item, index) => (
+                        <div 
+                            key={item.numeral} 
+                            className={`card-border relative ${
+                                index === 2
+                                    ? 'md:col-span-2 md:mx-auto md:w-[calc(50%-0.5rem)] lg:w-full lg:col-span-1 lg:mx-0 lg:max-w-none'
+                                    : ''
+                            }`}
+                        >
                             <span className="absolute top-6 left-6 text-accent text-lg md:text-2xl leading-none italic font-serif">
                                 {item.numeral}
                             </span>
