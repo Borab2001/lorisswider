@@ -42,6 +42,15 @@ export const metadata: Metadata = {
 			"Loris Swider est un jeune pianiste français connu par ses performances en gare et sur les réseaux. Membre de la troupe Maestro, il mélange les genres musicaux et se produit sur scène.",
 		images: ["/og-image.jpg"],
 	},
+	icons: {
+		icon: [
+			{ url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+			{ url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+			{ url: "/favicon.ico" },
+		],
+		apple: "/apple-touch-icon.png",
+	},
+	manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
