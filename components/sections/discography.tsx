@@ -78,12 +78,12 @@ export default function Discography() {
                         ) : (
                         <div
                             key={i}
-                            className="relative aspect-square flex flex-col items-center justify-center gap-3 card-border bg-card"
+                            className="relative aspect-square p-4 md:p-6 flex flex-col items-center justify-center gap-3 card-border bg-card"
                         >
                             <div className="w-8 h-8 text-foreground">
                                 <LockIcon />
                             </div>
-                            <span className="text-xs font-sans font-medium tracking-widest text-muted">
+                            <span className="text-xs font-sans font-medium tracking-wider text-muted">
                                 Bientôt disponible
                             </span>
                         </div>
