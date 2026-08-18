@@ -5,6 +5,7 @@ import Services from "@/components/sections/services";
 import Discography from "@/components/sections/discography";
 import Spotlight from "@/components/sections/spotlight";
 import Gallery from "@/components/sections/gallery";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<Discography />
 			<Spotlight />
 			<Gallery />
+			<Footer />
 		</>
     )
 }
