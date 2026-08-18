@@ -1,6 +1,6 @@
 'use client'
 
-import { useActionState } from 'react'
+import { useActionState, useState } from 'react'
 import { sendContactMessage } from '@/app/actions/contact'
 import Button from '@/components/ui/button'
 
@@ -8,6 +8,11 @@ const initialState = { success: false, error: null }
 
 export default function Contact() {
     const [state, formAction, isPending] = useActionState(sendContactMessage, initialState)
+    const [isValid, setIsValid] = useState(false)
+
+    function handleFormChange(e: React.FormEvent<HTMLFormElement>) {
+        setIsValid(e.currentTarget.checkValidity())
+    }
 
     return (
         <section id="contact" className="scroll-mt-24 px-8 md:px-16 py-24 md:py-32">
@@ -16,7 +21,7 @@ export default function Contact() {
                 Contactez Loris
                 </h2>
 
-                <form action={formAction} className="flex flex-col gap-12 text-left">
+                <form action={formAction} onChange={handleFormChange} className="flex flex-col gap-12 text-left">
                     <div className="grid md:grid-cols-2 gap-12 md:gap-4">
                         <input
                             type="text"
@@ -63,7 +68,7 @@ export default function Contact() {
                         className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-accent resize-none"
                     />
 
-                    <Button type="submit" disabled={isPending} className="mt-4 mx-auto">
+                    <Button type="submit" disabled={!isValid || isPending} className="mt-4 mx-auto">
                         {isPending ? 'Envoi...' : 'Envoyer'}
                     </Button>
 
