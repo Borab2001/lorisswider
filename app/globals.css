@@ -12,6 +12,10 @@
     --font-sans: var(--font-sans), sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-background);
     color: var(--color-foreground);
