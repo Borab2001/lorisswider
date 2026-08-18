@@ -14,7 +14,8 @@ type DiscographyItem =
         }
     | null
 
-const discography: DiscographyItem[] = [{
+const discography: DiscographyItem[] = [
+    {
         image: '/images/about.webp',
         alt: '/',
         links: {
@@ -82,7 +83,7 @@ export default function Discography() {
                             <div className="w-8 h-8 text-foreground">
                                 <LockIcon />
                             </div>
-                            <span className="text-[10px] uppercase font-sans tracking-widest text-muted">
+                            <span className="text-xs font-sans font-medium tracking-widest text-muted">
                                 Bientôt disponible
                             </span>
                         </div>
