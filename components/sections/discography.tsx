@@ -47,7 +47,8 @@ export default function Discography() {
                             <Image 
                                 src={item.image} 
                                 alt={item.alt}
-                                fill 
+                                fill
+                                loading="lazy"
                                 className="object-cover" 
                             />
 

@@ -10,6 +10,7 @@ export default function Spotlight() {
                         alt="Projet Désert"
                         fill
                         sizes="100vw"
+                        loading="lazy"
                         className="object-cover"
                     />
                 </div>

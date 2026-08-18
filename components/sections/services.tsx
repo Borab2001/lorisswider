@@ -41,7 +41,12 @@ export default function Services() {
                             </span>
 
                             <div className="relative w-full h-auto aspect-4/3 flex items-center object-center">
-                                <Image src={item.icon} alt={item.alt} fill loading="lazy" />
+                                <Image 
+                                    src={item.icon}
+                                    alt={item.alt}
+                                    fill
+                                    loading="lazy"
+                                />
                             </div>
 
                             <div className="p-6 flex flex-col gap-3">

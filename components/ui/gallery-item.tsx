@@ -22,6 +22,7 @@ export default function GalleryItem({
                 alt={title}
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"
+                loading="lazy"
                 className={`object-cover ${grayscale ? 'grayscale' : ''}`}
             />
 
