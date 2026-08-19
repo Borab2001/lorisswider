@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, DM_Sans } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -15,6 +15,10 @@ const dmSans = DM_Sans({
 	subsets: ['latin'],
 	variable: '--font-sans',
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0A0A0A",
+};
 
 export const metadata: Metadata = {
 	title: "Loris Swider",

@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  color-scheme: dark;
+}
+
 body {
     background: var(--color-background);
     color: var(--color-foreground);
