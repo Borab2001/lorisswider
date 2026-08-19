@@ -34,7 +34,7 @@ export default function GalleryItem({
                 group-hover:opacity-100 group-hover:pointer-events-auto
                 group-focus-within:opacity-100 group-focus-within:pointer-events-auto"
             >
-                <span className="text-base font-sans text-foreground text-semibold tracking-wide">{date}</span>
+                <span className="text-base font-sans text-foreground font-normal tracking-wide">{date}</span>
                 <span className="font-serif italic text-lg md:text-xl text-foreground text-center px-4">
                     {title}
                 </span>
