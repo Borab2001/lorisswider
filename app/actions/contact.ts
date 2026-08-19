@@ -29,7 +29,7 @@ export async function sendContactMessage(
             to: 'contact.lorisswider@gmail.com',
             replyTo: email,
             subject: `Nouveau message : ${subject}`,
-            text: `De : ${surname} ${name} (${email})\nObjet : ${subject}\n\n${message}`,
+            text: `De : ${surname.toUpperCase()} ${name} (${email})\nObjet : ${subject}\n\n${message}`,
         })
 
         return { success: true, error: null }
