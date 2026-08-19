@@ -6,10 +6,10 @@ const mosaic = [
 ]
 
 const gridItems = [
-    { image: '/images/about.webp', date: '01 / 2026', title: 'Concert SNCF' },
-    // { image: '/images/about.webp', date: '01 / 2026', title: 'Shooting affiche Concert SNCF' },
-    // { image: '/images/about.webp', date: '01 / 2026', title: 'Collaboration Optical Factory x Rayban Meta' },
-    // { image: '/images/about.webp', date: '01 / 2026', title: 'Prestation lors d\'un mariage' },
+    { image: '/images/sncf1.webp', date: '11 / 2025', title: 'Concert SNCF' },
+    { image: '/images/sncf2.webp', date: '11 / 2025', title: 'Shooting affiche Concert SNCF' },
+    // { image: '/images/about.webp', date: 'XX / 202X', title: 'Collaboration Optical Factory x Rayban Meta' },
+    // { image: '/images/about.webp', date: 'XX / 202X', title: 'Prestation lors d\'un mariage' },
 ]
 
 export default function Gallery() {
