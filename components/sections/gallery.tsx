@@ -1,8 +1,8 @@
 import GalleryItem from '@/components/ui/gallery-item'
 
 const mosaic = [
-    { image: '/images/hero.webp', date: '01 / 2026', title: 'Medley lors du concert Maestro' },
-    { image: '/images/spotlight.webp', date: '01 / 2026', title: 'Concert avec la troupe Maestro' },
+    { image: '/images/concert_solo.webp', date: '03 / 2025', title: 'Medley lors du concert Maestro' },
+    { image: '/images/concert_troupe.webp', date: '03 / 2025', title: 'Concert avec la troupe Maestro' },
 ]
 
 const gridItems = [
