@@ -26,7 +26,7 @@ export async function sendContactMessage(
     try {
         await resend.emails.send({
             from: 'Contact site <onboarding@resend.dev>',
-            to: 'email-de-loris@exemple.com',
+            to: 'contact.lorisswider@gmail.com',
             replyTo: email,
             subject: `Nouveau message : ${subject}`,
             text: `De : ${surname} ${name} (${email})\nObjet : ${subject}\n\n${message}`,
