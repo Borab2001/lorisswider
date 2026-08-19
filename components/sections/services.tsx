@@ -29,11 +29,11 @@ export default function Services() {
     return (
         <section id="prestations" className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
-                <h2 className="font-serif italic text-[32px] sm:text-4xl md:text-5xl text-foreground mb-8 md:mb-12">
+                <h2 className="font-serif italic text-[32px] sm:text-4xl md:text-5xl text-foreground text-left sm:text-center lg:text-left mb-8 md:mb-12">
                     Prestations
                 </h2>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {prestations.map((item, index) => (
                         <div 
                             key={item.numeral} 
