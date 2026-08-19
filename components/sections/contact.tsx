@@ -3,12 +3,14 @@
 import { useActionState, useState } from 'react'
 import { sendContactMessage } from '@/app/actions/contact'
 import Button from '@/components/ui/button'
+import ChevronDownIcon from '../icons/chevron-down-icon'
 
 const initialState = { success: false, error: null }
 
 export default function Contact() {
     const [state, formAction, isPending] = useActionState(sendContactMessage, initialState)
     const [isValid, setIsValid] = useState(false)
+    const [subject, setSubject] = useState('')
 
     function handleFormChange(e: React.FormEvent<HTMLFormElement>) {
         setIsValid(e.currentTarget.checkValidity())
@@ -28,14 +30,14 @@ export default function Contact() {
                             name="surname"
                             placeholder="Nom"
                             required
-                            className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-accent"
+                            className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-foreground"
                         />
                         <input
                             type="text"
                             name="name"
                             placeholder="Prénom"
                             required
-                            className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-accent"
+                            className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-foreground"
                         />
                     </div>
                     <input
@@ -43,30 +45,38 @@ export default function Contact() {
                         name="email"
                         placeholder="Email"
                         required
-                        className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-accent"
+                        className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-foreground"
                     />
-                    <select
-                        name="subject"
-                        required
-                        defaultValue=""
-                        aria-label="Objet"
-                        className="bg-transparent border-b border-border py-4 text-foreground focus:outline-none focus:border-accent"
-                    >
-                        <option value="" disabled className="bg-background">
-                            Objet
-                        </option>
-                        <option value="Piano d'ambiance" className="bg-background">Piano d&apos;ambiance</option>
-                        <option value="Événementiel" className="bg-background">Événementiel</option>
-                        <option value="Mariage" className="bg-background">Mariage</option>
-                        <option value="Autre" className="bg-background">Autre</option>
-                    </select>
+                    <div className="relative">
+                        <select
+                            name="subject"
+                            required
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                            aria-label="Objet"
+                            className={`w-full appearance-none bg-transparent border-b border-border py-4 pr-8 cursor-pointer focus:outline-none focus:border-foreground ${
+                                subject ? 'text-foreground' : 'text-muted'
+                            }`}
+                        >
+                            <option value="" disabled className="bg-background text-muted">
+                                Objet
+                            </option>
+                            <option value="Piano d'ambiance" className="bg-background text-foreground">Piano d&apos;ambiance</option>
+                            <option value="Événementiel" className="bg-background text-foreground">Événementiel</option>
+                            <option value="Mariage" className="bg-background text-foreground">Mariage</option>
+                            <option value="Autre" className="bg-background text-foreground">Autre</option>
+                        </select>
+                        <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 text-muted">
+                            <ChevronDownIcon />
+                        </div>
+                    </div>
 
                     <textarea
                         name="message"
                         placeholder="Message"
                         required
                         rows={4}
-                        className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-accent resize-none"
+                        className="bg-transparent border-b border-border py-4 text-foreground placeholder:text-muted focus:outline-none focus:border-foreground resize-none"
                     />
 
                     <Button type="submit" disabled={!isValid || isPending} className="mt-4 mx-auto">
