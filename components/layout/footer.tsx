@@ -19,9 +19,9 @@ export default function Footer() {
                         src="/illustrations/sign.svg"
                         alt="Loris Swider signature"
                         width={200}
-                        height={100}
+                        height={113}
                         loading="lazy"
-                        className="object-contain"
+                        className="object-contain h-auto"
                     />
 
                     <div className="grid grid-cols-2 gap-x-12 gap-y-4">
