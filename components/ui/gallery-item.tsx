@@ -5,6 +5,7 @@ type GalleryItemProps = {
     date: string
     title: string
     aspect?: string
+    sizes?: string
     grayscale?: boolean
 }
 
@@ -12,7 +13,8 @@ export default function GalleryItem({
     image,
     date,
     title,
-    aspect = 'aspect-square',
+    aspect = 'aspect-3/4',
+    sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw',
     grayscale = true,
 }: GalleryItemProps) {
     return (
@@ -21,8 +23,9 @@ export default function GalleryItem({
                 src={image}
                 alt={title}
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes={sizes}
                 loading="lazy"
+                quality={100}
                 className={`object-cover ${grayscale ? 'grayscale' : ''}`}
             />
 

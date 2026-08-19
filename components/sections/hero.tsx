@@ -8,6 +8,8 @@ export default function Hero() {
                 alt="Loris Swider au piano"
                 fill
                 priority
+                sizes="100vw"
+                quality={100}
                 className="object-cover object-top"
             />
             <div className="absolute inset-0 bg-linear-to-t from-background via-background/10 to-transparent" />

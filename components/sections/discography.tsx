@@ -50,6 +50,8 @@ export default function Discography() {
                                 alt={item.alt}
                                 fill
                                 loading="lazy"
+                                quality={100}
+                                sizes="(max-width: 768px) 50vw, 25vw"
                                 className="object-cover" 
                             />
 

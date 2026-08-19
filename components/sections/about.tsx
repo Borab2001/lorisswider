@@ -11,7 +11,8 @@ export default function About() {
                             src="/images/about.webp"
                             alt="Loris Swider"
                             fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            sizes="(min-width: 1024px) 512px, (min-width: 768px) 576px, 100vw"
+                            quality={100}
                             loading="lazy"
                             className="object-cover"
                         />

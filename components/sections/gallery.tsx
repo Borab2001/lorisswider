@@ -18,7 +18,7 @@ export default function Gallery() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-4 mb-4">
                     {mosaic.map((item) => (
-                        <GalleryItem key={item.image} {...item} aspect="aspect-4/3" />
+                        <GalleryItem key={item.image} {...item} aspect="aspect-4/3" sizes="(max-width: 1024px) 100vw, 50vw" />
                     ))}
                 </div>
 
