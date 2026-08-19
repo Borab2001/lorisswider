@@ -10,7 +10,7 @@ export default function Hero() {
                 priority
                 sizes="100vw"
                 quality={100}
-                className="object-cover object-top"
+                className="object-cover object-top max-[480px]:object-[30%_top]"
             />
             <div className="absolute inset-0 bg-linear-to-t from-background via-background/10 to-transparent" />
 
