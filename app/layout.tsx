@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, DM_Sans } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import SmoothScrollProvider from '@/components/providers/smooth-scroll-provider';
 
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 		>
 			<body className="min-h-full flex flex-col">
 				<SmoothScrollProvider>{children}</SmoothScrollProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
