@@ -23,7 +23,7 @@ export default function About() {
                     <h2 className="font-serif italic text-4xl md:text-5xl text-foreground mb-6">
                         Un univers élégant & moderne
                     </h2>
-                    <p className="text-sm sm:text-base max-w-2xl lg:max-w-none text-muted leading-relaxed">
+                    <p className="text-base max-w-2xl lg:max-w-none text-muted leading-relaxed">
                         Loris Swider est pianiste prestataire et créateur de contenu, formé
                         au conservatoire dès l&apos;enfance. Il développe un univers mêlant
                         piano classique, jazz, pop et improvisation, avec pour signature

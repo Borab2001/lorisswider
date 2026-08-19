@@ -59,10 +59,10 @@ export default function Services() {
                             </div>
 
                             <div className="p-4 md:p-6 flex flex-col gap-3">
-                                <h3 className="font-serif italic text-lg sm:text-xl lg:text-2xl text-foreground">
+                                <h3 className="font-serif italic text-[22px] sm:text-2xl text-foreground">
                                     {item.title}
                                 </h3>
-                                <p className="text-muted text-sm leading-relaxed">
+                                <p className="text-muted text-sm leading-relaxed text-pretty">
                                     {item.description}
                                 </p>
                             </div>
