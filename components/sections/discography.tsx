@@ -33,7 +33,7 @@ export default function Discography() {
     return (
         <section id="musique" className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
-                <h2 className="font-serif italic text-4xl md:text-5xl text-foreground mb-16">
+                <h2 className="font-serif italic text-[32px] sm:text-4xl md:text-5xl text-foreground mb-8 md:mb-12">
                     Discographie
                 </h2>
 

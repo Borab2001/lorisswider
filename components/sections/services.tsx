@@ -29,17 +29,17 @@ export default function Services() {
     return (
         <section id="prestations" className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
-                <h2 className="font-serif italic text-4xl md:text-5xl text-foreground mb-16">
+                <h2 className="font-serif italic text-[32px] sm:text-4xl md:text-5xl text-foreground mb-8 md:mb-12">
                     Prestations
                 </h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {prestations.map((item, index) => (
                         <div 
                             key={item.numeral} 
                             className={`card-border relative ${
                                 index === 2
-                                    ? 'md:col-span-2 md:mx-auto md:w-[calc(50%-0.5rem)] lg:w-full lg:col-span-1 lg:mx-0 lg:max-w-none'
+                                    ? 'sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.5rem)] lg:w-full lg:col-span-1 lg:mx-0 lg:max-w-none'
                                     : ''
                             }`}
                         >

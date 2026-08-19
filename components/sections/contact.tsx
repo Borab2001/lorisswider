@@ -19,7 +19,7 @@ export default function Contact() {
     return (
         <section id="contact" className="scroll-mt-24 px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-2xl mx-auto text-center">
-                <h2 className="font-serif italic text-4xl md:text-5xl text-foreground mb-12">
+                <h2 className="font-serif italic text-[32px] sm:text-4xl md:text-5xl text-foreground mb-8 sm:mb-12">
                     Contactez Loris
                 </h2>
 

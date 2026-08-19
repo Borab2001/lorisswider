@@ -20,7 +20,7 @@ export default function About() {
                 </div>
 
                 <div className="mx-auto">
-                    <h2 className="font-serif italic text-4xl md:text-5xl text-foreground mb-6">
+                    <h2 className="font-serif italic text-[32px] sm:text-4xl md:text-5xl text-foreground mb-6">
                         Un univers élégant & moderne
                     </h2>
                     <p className="text-base max-w-2xl lg:max-w-none text-muted leading-relaxed">
