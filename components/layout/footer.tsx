@@ -7,7 +7,9 @@ const socials = [
     { label: 'Spotify', href: 'https://open.spotify.com/intl-fr/artist/64PwZ51lWZ9JT0lNDgQ4qj' },
     { label: 'TikTok', href: 'https://www.tiktok.com/@lorisotto_officiel' },
     { label: 'Deezer', href: 'https://www.deezer.com/fr/artist/282043541' },
-    { label: 'Facebook', href: '#' },
+    // { label: 'Facebook', href: '#' },
+    { label: 'Email', href: 'mailto:contact.lorisswider@gmail.com' },
+    
 ]
 
 export default function Footer() {
