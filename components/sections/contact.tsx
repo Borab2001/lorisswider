@@ -61,9 +61,8 @@ export default function Contact() {
                             <option value="" disabled className="bg-background text-muted">
                                 Objet
                             </option>
-                            <option value="Piano d'ambiance" className="bg-background text-foreground">Piano d&apos;ambiance</option>
-                            <option value="Événementiel" className="bg-background text-foreground">Événementiel</option>
-                            <option value="Mariage" className="bg-background text-foreground">Mariage</option>
+                            <option value="Prestation" className="bg-background text-foreground">Demande de prestation</option>
+                            <option value="Composition" className="bg-background text-foreground">Demande de composition</option>
                             <option value="Autre" className="bg-background text-foreground">Autre</option>
                         </select>
                         <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 text-muted">

@@ -28,8 +28,8 @@ export async function sendContactMessage(
             from: 'Contact site <onboarding@resend.dev>',
             to: 'contact.lorisswider@gmail.com',
             replyTo: email,
-            subject: `Nouveau message : ${subject}`,
-            text: `De : ${surname.toUpperCase()} ${name} (${email})\nObjet : ${subject}\n\n${message}`,
+            subject: `Nouvelle demande : ${subject}`,
+            text: `De : ${surname.toUpperCase()} ${name} (${email})\nObjet : Demande ${subject}\n\n${message}`,
         })
 
         return { success: true, error: null }
