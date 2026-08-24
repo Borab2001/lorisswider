@@ -10,8 +10,8 @@ export default function Header() {
     ]
 
     return (
-        <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 sm:px-8 md:px-16 py-5.5">
-            <Link href="/" className="font-serif text-xl uppercase italic text-foreground">
+        <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-center md:justify-between px-4 sm:px-8 md:px-16 py-5.5 bg-linear-to-b from-background to-transparent">
+            <Link href="/" className="font-serif text-xl uppercase italic text-foreground text-shadow-lg text-shadow-background">
                 Loris
             </Link>
             <nav className="hidden md:flex items-center gap-8">
@@ -19,7 +19,7 @@ export default function Header() {
                     <Link
                         key={item.href}
                         href={item.href}
-                        className="font-sans text-sm font-medium uppercase tracking-widest text-foreground hover:text-accent transition-colors"
+                        className="font-sans text-sm font-medium uppercase tracking-widest text-foreground hover:text-accent transition-colors text-shadow-lg text-shadow-background"
                     >
                         {item.label}
                     </Link>
