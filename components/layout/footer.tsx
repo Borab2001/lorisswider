@@ -28,15 +28,21 @@ export default function Footer() {
 
                     <div className="grid grid-cols-2 gap-x-12 gap-y-4">
                         {socials.map((social) => (
-                            <Link
+                            <div
                                 key={social.label}
-                                href={social.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm font-sans font-medium capitalize text-foreground hover:text-accent transition-colors"
+                                className="flex"
                             >
-                                {social.label}
-                            </Link>
+                                <Link
+                                    
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    // className="text-sm font-sans font-medium capitalize text-foreground hover:text-accent transition-colors"
+                                    className="relative text-sm font-sans font-medium capitalize text-foreground after:absolute after:bg-foreground after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
+                                >
+                                    {social.label}
+                                </Link>
+                            </div>
                         ))}
                     </div>
                 </div>
