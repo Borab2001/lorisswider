@@ -1,8 +1,6 @@
-// import VideoPlayer from '@/components/ui/video-player'
-
 export default function Video() {
     return (
-        <section className="px-4 sm:px-8 md:px-16 pb-24 md:pb-32">
+        <section className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
                 <div className="relative w-full aspect-video">
                     <iframe
