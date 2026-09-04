@@ -1,14 +1,13 @@
+import { YouTubeEmbed } from '@next/third-parties/google'
+
 export default function Video() {
     return (
         <section className="px-4 sm:px-8 md:px-16 py-24 md:py-32">
             <div className="max-w-7xl mx-auto">
-                <div className="relative w-full aspect-video">
-                    <iframe
-                        src={`https://www.youtube.com/embed/f6WZM7n3-IM?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0`}
-                        title="Loris Swider au piano"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="absolute inset-0 w-full h-full"
+                 <div className="youtube-full-width">
+                    <YouTubeEmbed
+                        videoid="f6WZM7n3-IM"
+                        params="controls=0&rel=0"
                     />
                 </div>
             </div>

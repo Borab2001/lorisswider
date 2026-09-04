@@ -13,11 +13,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  	scroll-behavior: smooth;
 }
 
 :root {
-  color-scheme: dark;
+  	color-scheme: dark;
 }
 
 body {
@@ -33,4 +33,16 @@ body {
       linear-gradient(to bottom, rgb(240 235 224 / 0.26), rgb(240 235 224 / 0));
     background-origin: border-box;
     background-clip: padding-box, border-box;
+}
+
+.youtube-full-width {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+}
+
+.youtube-full-width lite-youtube {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 100% !important;
+	background-image: url('https://img.youtube.com/vi/f6WZM7n3-IM/maxresdefault.jpg') !important;
 }
