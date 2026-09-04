@@ -46,3 +46,7 @@ body {
 	height: 100% !important;
 	background-image: url('https://img.youtube.com/vi/f6WZM7n3-IM/maxresdefault.jpg') !important;
 }
+
+.lenis.lenis-scrolling iframe {
+  	pointer-events: none;
+}

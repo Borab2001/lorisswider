@@ -7,7 +7,7 @@ export default function Video() {
                  <div className="youtube-full-width">
                     <YouTubeEmbed
                         videoid="f6WZM7n3-IM"
-                        params="controls=0&rel=0"
+                        params="controls=1&rel=0"
                     />
                 </div>
             </div>
