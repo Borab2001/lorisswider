@@ -15,15 +15,16 @@ type DiscographyItem =
     | null
 
 const discography: DiscographyItem[] = [
-    {
-        image: '/images/about.webp',
-        alt: '/',
-        links: {
-            spotify: 'https://open.spotify.com/track/xxxxx',
-            deezer: 'https://www.deezer.com/track/xxxxx',
-            youtube: 'https://www.youtube.com/watch?v=xxxxx',
-        },
-    },
+    // {
+    //     image: '/images/about.webp',
+    //     alt: '/',
+    //     links: {
+    //         spotify: 'https://open.spotify.com/track/xxxxx',
+    //         deezer: 'https://www.deezer.com/track/xxxxx',
+    //         youtube: 'https://www.youtube.com/watch?v=xxxxx',
+    //     },
+    // },
+    null,
     null,
     null,
     null,
