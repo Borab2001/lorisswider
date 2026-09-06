@@ -23,7 +23,7 @@ export default function Spotlight() {
                             group-focus-within:opacity-100 group-focus-within:pointer-events-auto"
                     >
                         <span className="text-base font-sans text-foreground font-normal tracking-wide">
-                            XX / 202X
+                            01 / 2026
                         </span>
                         <span className="font-serif italic text-lg md:text-xl text-foreground text-center px-4">
                             Projet Désert Maestro
