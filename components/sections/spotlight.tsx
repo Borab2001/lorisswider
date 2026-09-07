@@ -28,7 +28,7 @@ export default function Spotlight() {
                         <span className="font-serif italic text-lg md:text-xl text-foreground text-center px-4">
                             Projet Désert Maestro
                         </span>
-                        {/* Lien Vlog */}
+                        {/* Lien Vlog ici */}
                     </div>
                 </div>
 
