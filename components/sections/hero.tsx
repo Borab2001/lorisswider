@@ -19,7 +19,7 @@ export default function Hero() {
                     Loris Swider
                 </h1>
                 <p className="mt-3 text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-muted">
-                    Pianiste · Compositeur · Prestatair
+                    Pianiste · Compositeur · Prestataire
                 </p>
             </div>
         </section>
