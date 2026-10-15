@@ -5,7 +5,7 @@ export default function Header() {
         { label: 'À propos', href: '#a_propos' },
         { label: 'Prestations', href: '#prestations' },
         { label: 'Musique', href: '#musique' },
-        // { label: 'Boutique', href: '#boutique' },
+        { label: 'Boutique', href: 'https://shop.lorisswider.com', external: true },
         { label: 'Contact', href: '#contact' },
     ]
 
@@ -21,6 +21,7 @@ export default function Header() {
                     <Link
                         key={item.href}
                         href={item.href}
+                        {...(item.external && { target: '_blank', rel: 'noopener noreferrer' })}
                         // className="font-sans text-sm font-medium uppercase tracking-widest text-foreground hover:text-accent transition-colors text-shadow-lg text-shadow-background"
                         className="relative text-sm font-medium uppercase tracking-widest text-foreground text-shadow-lg text-shadow-background after:absolute after:bg-foreground after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300"
                     >
