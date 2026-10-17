@@ -20,7 +20,7 @@ type SubmitButtonProps = BaseProps & {
 type ButtonProps = LinkButtonProps | SubmitButtonProps
 
 const baseStyles =
-    "inline-block min-w-45 bg-accent text-background font-medium font-sans tracking-tight px-8 py-3 text-base md:text-lg hover:bg-accent/90 transition-colors cursor-pointer disabled:cursor-not-allowed disabled:hover:bg-accent"
+    "inline-block min-w-45 bg-accent text-background font-medium font-sans tracking-tight px-8 py-3 text-base md:text-lg hover:bg-accent/80 transition-colors cursor-pointer disabled:cursor-not-allowed disabled:hover:bg-accent"
 
 export default function Button(props: ButtonProps) {
     if ('href' in props && props.href) {
