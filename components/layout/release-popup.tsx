@@ -40,7 +40,7 @@ function Countdown() {
                 <Fragment key={unit.label}>
                     {i > 0 && <span aria-hidden className="h-11 w-px bg-album" />}
                     <div className="flex flex-col items-center gap-1">
-                        <span className="font-serif italic text-[2.6rem] leading-none tracking-tight tabular-nums text-foreground">
+                        <span className="px-1.5 font-serif italic text-[2.6rem] leading-none tracking-tight tabular-nums text-foreground">
                             {pad(unit.value)}
                         </span>
                         <span className="text-xs font-medium uppercase tracking-wide text-muted">
