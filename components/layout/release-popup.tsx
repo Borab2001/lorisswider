@@ -80,6 +80,7 @@ export default function ReleasePopup() {
         const dialog = dialogRef.current
         if (!dialog || dialog.open) return
         dialog.showModal()
+        dialog.focus()
         document.body.style.overflow = 'hidden'
     }, [])
 
@@ -113,6 +114,7 @@ export default function ReleasePopup() {
     return (
         <dialog
             ref={dialogRef}
+            tabIndex={-1}
             aria-labelledby="release-popup-title"
             data-lenis-prevent
             onCancel={(e) => {
@@ -123,7 +125,7 @@ export default function ReleasePopup() {
             onClick={(e) => {
                 if (e.target === e.currentTarget) requestClose()
             }}
-            className={`m-auto max-h-[calc(100svh-2rem)] w-[calc(100%-2rem)] max-w-120 overflow-y-auto bg-background p-0 text-foreground backdrop:bg-background/50 backdrop:backdrop-blur-lg ${
+            className={`m-auto max-h-[calc(100svh-2rem)] w-[calc(100%-2rem)] max-w-120 overflow-y-auto bg-background p-0 text-foreground outline-none backdrop:bg-background/50 backdrop:backdrop-blur-lg ${
                 closing
                     ? 'animate-popup-out backdrop:animate-fade-out'
                     : 'open:animate-popup-in backdrop:animate-fade-in'
