@@ -154,9 +154,9 @@ export default function ReleasePopup() {
                     type="button"
                     onClick={requestClose}
                     aria-label="Fermer"
-                    className="absolute right-0 top-0 z-10 size-10 p-2 hover:bg-foreground/5 cursor-pointer"
+                    className="absolute right-2 top-2 z-10 size-10 p-2 rounded-lg cursor-pointer text-foreground hover:bg-[#f0ebe013]"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" color="#F0EBE0" fill="none" stroke="#F0EBE0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" color="currentColor" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6"></path>
                     </svg>
                 </button>
