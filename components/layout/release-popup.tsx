@@ -115,8 +115,7 @@ export default function ReleasePopup() {
             }}
             className={`m-auto max-h-[calc(100svh-2rem)] w-[calc(100%-2rem)] max-w-120 overflow-y-auto bg-background p-0 text-foreground backdrop:bg-background/50 backdrop:backdrop-blur-lg ${
                 closing
-                    // ? 'animate-popup-out backdrop:animate-fade-out'
-                    ? ''
+                    ? 'animate-popup-out backdrop:animate-fade-out'
                     : 'open:animate-popup-in backdrop:animate-fade-in'
             }`}
         >
