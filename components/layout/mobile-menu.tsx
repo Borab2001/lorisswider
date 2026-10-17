@@ -38,7 +38,7 @@ export default function MobileMenu({ items }: { items: NavItem[] }) {
     }, [open])
 
     return (
-        <div className="md:hidden">
+        <div className="lg:hidden">
             <button
                 type="button"
                 onClick={() => setOpen((v) => !v)}
