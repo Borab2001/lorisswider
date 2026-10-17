@@ -9,7 +9,7 @@ type NavItem = {
     external?: boolean
 }
 
-const numerals = ['I', 'II', 'III', 'IV', 'V']
+const numerals = ['I', 'II', 'III', 'IV', 'V', 'VI']
 
 export default function MobileMenu({ items }: { items: NavItem[] }) {
     const [open, setOpen] = useState(false)
