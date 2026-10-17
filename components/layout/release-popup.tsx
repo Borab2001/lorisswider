@@ -1,10 +1,11 @@
 'use client'
 
-import { Fragment, useEffect, useRef, useState, useSyncExternalStore } from 'react'
+import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const EVENT_ISO = '2026-11-28T20:00:00+02:00'
+export const EVENT_ISO = '2026-11-28T20:00:00+02:00'
+export const OPEN_RELEASE_POPUP_EVENT = 'release-popup:open'
 const EVENT_SECONDS = Math.floor(new Date(EVENT_ISO).getTime() / 1000)
 const EVENT_LABEL = '28 Novembre 2026'
 const TICKET_URL = 'https://my.weezevent.com/loris-swider-asteria-release-party'
@@ -75,12 +76,21 @@ export default function ReleasePopup() {
         }
     }, [])
 
-    function openPopup() {
+    const openPopup = useCallback(() => {
         const dialog = dialogRef.current
         if (!dialog || dialog.open) return
         dialog.showModal()
         document.body.style.overflow = 'hidden'
-    }
+    }, [])
+
+    useEffect(() => {
+        const onOpenRequest = () => {
+            if (dialogRef.current) openPopup()
+            else setEligible(true)
+        }
+        window.addEventListener(OPEN_RELEASE_POPUP_EVENT, onOpenRequest)
+        return () => window.removeEventListener(OPEN_RELEASE_POPUP_EVENT, onOpenRequest)
+    }, [openPopup])
 
     function requestClose() {
         if (closing) return
