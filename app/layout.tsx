@@ -8,6 +8,7 @@ import SmoothScrollProvider from '@/components/providers/smooth-scroll-provider'
 const instrumentSerif = Instrument_Serif({
 	subsets: ['latin'],
 	weight: '400',
+	style: ['normal', 'italic'],
 	variable: '--font-serif',
 });
 
