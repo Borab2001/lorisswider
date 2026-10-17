@@ -1,5 +1,6 @@
 import Header from "@/components/layout/header";
 import Hero from "@/components/sections/hero";
+import ReleasePopup from "@/components/layout/release-popup";
 import About from "@/components/sections/about";
 import Video from "@/components/sections/video";
 import Services from "@/components/sections/services";
@@ -14,6 +15,7 @@ export default function Home() {
 		<>
 			<Header />
 			<Hero />
+			<ReleasePopup />
 			<About />
 			<Video />
 			<Services />
