@@ -17,11 +17,10 @@ export default function Header() {
             <ReleaseBar />
 
             <header className="flex items-center justify-between px-4 sm:px-8 md:px-16 py-5.5 bg-linear-to-b from-background to-transparent">
-                <Link 
-                    href="/"
+                <p
                     className="relative font-serif text-xl uppercase italic text-foreground after:absolute after:bg-foreground after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 pointer-events-none">
                     Loris
-                </Link>
+                </p>
                 <nav className="hidden lg:flex items-center gap-8">
                     {navItems.map((item) => (
                         <Link
