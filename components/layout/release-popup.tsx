@@ -4,7 +4,7 @@ import { Fragment, useCallback, useEffect, useRef, useState, useSyncExternalStor
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const EVENT_ISO = '2026-11-28T20:00:00+02:00'
+export const EVENT_ISO = '2026-11-28T20:00:00+01:00'
 export const OPEN_RELEASE_POPUP_EVENT = 'release-popup:open'
 const EVENT_SECONDS = Math.floor(new Date(EVENT_ISO).getTime() / 1000)
 const EVENT_LABEL = '28 Novembre 2026'
